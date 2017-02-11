@@ -16,15 +16,11 @@ class Swapper extends Component {
     rightSelected: ''
   };
 
-  onLeftSelect = event => {
-    const {value} = event.target;
-    this.setState({leftSelected: value});
-  };
+  onLeftSelect = event =>
+    this.setState({leftSelected: event.target.value});
 
-  onRightSelect = event => {
-    const {value} = event.target;
-    this.setState({rightSelected: value});
-  };
+  onRightSelect = event =>
+    this.setState({rightSelected: event.target.value});
 
   moveLeft = () => {
     const selected = this.state.rightSelected;
