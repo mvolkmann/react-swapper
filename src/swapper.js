@@ -8,7 +8,7 @@ class Swapper extends Component {
     onMoveLeft: t.func.isRequired,
     onMoveRight: t.func.isRequired,
     rightItems: t.arrayOf(t.string).isRequired,
-    size: t.number
+    size: t.number.isRequired
   };
 
   state = {

@@ -39,7 +39,7 @@ class App extends Component {
           rightItems={likedFlavors}
           onMoveLeft={this.onUnlike}
           onMoveRight={this.onLike}
-          size={3}
+          size={5}
         />
       </div>
     );

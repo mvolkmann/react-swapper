@@ -13,9 +13,12 @@
 }
 
 .swapper button {
+  border-radius: 4px;
+  font-size: 18px;
   margin: 5px 10px;
 }
 
 .swapper select {
-  width: 100px;
+  font-size: 18px;
+  width: 170px;
 }

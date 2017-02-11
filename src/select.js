@@ -10,8 +10,8 @@ const Select = ({items, onSelect, size, value}) =>
 Select.propTypes = {
   items: t.arrayOf(t.string).isRequired,
   onSelect: t.func.isRequired,
-  size: t.number,
-  value: t.string
+  size: t.number.isRequired,
+  value: t.string.isRequired
 };
 
 export default Select;
