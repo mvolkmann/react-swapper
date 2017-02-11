@@ -1,0 +1,21 @@
+.App {
+  padding: 20px;
+}
+
+.swapper {
+  display: flex;
+}
+
+.swapper .buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.swapper button {
+  margin: 5px 10px;
+}
+
+.swapper select {
+  width: 100px;
+}

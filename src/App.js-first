@@ -1,0 +1,25 @@
+import React, {Component} from 'react';
+import Select from './select';
+import './App.css';
+
+class App extends Component {
+  onSelect = event => {
+    const {value} = event.target;
+    console.log('App.js onSelect: value =', value);
+  };
+
+  render() {
+    const items = [
+      'butter pecan', 'chocolate', 'chocolate chip', 'chocolate mint',
+      'cookie dough', 'neapolitan', 'rainbow sherbet',
+      'raspberry', 'strawberry', 'vanilla'
+    ];
+    return (
+      <div className="App">
+        <Select items={items} onSelect={this.onSelect} size={5}/>
+      </div>
+    );
+  }
+}
+
+export default App;
